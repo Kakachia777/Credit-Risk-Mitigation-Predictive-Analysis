@@ -1,8 +1,9 @@
 # Machine learning algorithms for predicting default of Credit Card clients 💳
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/robertofranceschi/default-credit-card-prediction/blob/master/code.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/Lalube9/Credit-Risk-Mitigation-Predictive-Analysis/default-credit-card-prediction/blob/master/code.ipynb)
 
-Classification of default of credit card clients from the UCI dataset using machine learning techniques
+Classification of default of credit card clients from the UCI dataset using machine learning techniques.
+
 
 ---
 ## Contents:
@@ -22,8 +23,7 @@ Classification of default of credit card clients from the UCI dataset using mach
         * [Principal Component Analysis](#principal-component-analysis)
     * [Oversampling and Undersampling](#oversampling-and-undersampling)
 4.  [Classification algorithms](#classification-algorithms)
-    * [Evaluation Methods](#evaluation-methods)
-    * [Evaluation Metrics](#evaluation-metrics)
+    * [Evaluation Metrics](#evaluation-methods)
     * [Models](#models)
         * [Logistic Regression](#logistic-regression)
         * [Random Forests](#random-forest)
@@ -43,7 +43,7 @@ The goal is to build an automated model for both identifying the key factors, an
 
 The analysis has been fully conducted with Python language, exploiting several machine learning and statistical frameworks available such as `scikit-learn`, `numpy`, `pandas`, `imblearn` together with other data visualization libraries (`matplotlib` and `seaborn`).
 
-Some code snippets have been reported for a better understanding of each step. Moreover, the full code implementation of this analysis is publicly available at [github.com/robertofranceschi/default-credit-card-prediction](https://github.com/robertofranceschi/default-credit-card-prediction).
+Some code snippets have been reported for a better understanding of each step. Moreover, the full code implementation of this analysis is publicly available at [github.com/https://github.com/Lalube9/default-credit-card-prediction](https://github.com/Lalube9/Credit-Risk-Mitigation-Predictive-Analysis/default-credit-card-prediction).
 
 -------------------------------------
 ## Exploratory Data Analysis
@@ -96,7 +96,7 @@ The last variable is the one to be predicted:
 The main aim of the data is to discriminate clients that are predicted to credit card default the next month, according to the `default.payment.next.month` column which is set to “0” for non-defaulters and “1” for defaulters. Thus, it is a **_binary classification problem_** on a relatively _unbalanced dataset_, as shown in the following figure.
 
 <p align = "center">
-<img height="300" src="https://github.com/robertofranceschi/default-credit-card-prediction/blob/master/images/class-distribution.png?raw=true">
+<img height="300" src="https://github.com/Lalube9/Credit-Risk-Mitigation-Predictive-Analysis/default-credit-card-prediction/blob/master/images/class-distribution.png?raw=true">
 </p>
 <p align = "center">
 Class distribution
@@ -225,7 +225,7 @@ The very high value of standard deviation has been further investigated. As can 
 
 
 <p align = "center">
-<img height="300" src="https://github.com/robertofranceschi/default-credit-card-prediction/blob/master/images/LIMIT_BAL_distribution.png?raw=true">
+<img height="300" src="https://github.com/Lalube9/Credit-Risk-Mitigation-Predictive-Analysis/default-credit-card-prediction/blob/master/images/LIMIT_BAL_distribution.png?raw=true">
 </p>
 <p align = "center">
 Density plot of amount of given credit (LIMIT_BAL)
@@ -250,7 +250,7 @@ In practice, the underlying probability distribution is not known but only a sam
 The following representation shows the correlation matrix between features: since the way the matrix is constructed make it symmetric and because of the large number of features, only the heatmap of the lower diagonal matrix (the diagonal itself is excluded) is reported for a better visualization.  
 
 <p align = "center">
-<img height="500" src="https://github.com/robertofranceschi/default-credit-card-prediction/blob/master/images/correlation%20matrix.png?raw=true">
+<img height="500" src="https://github.com/Lalube9/Credit-Risk-Mitigation-Predictive-Analysis/default-credit-card-prediction/blob/master/images/correlation%20matrix.png?raw=true">
 </p>
 <p align = "center">
 Correlation matrix by means of the Pearson’s coefficient for all feature pairs.
@@ -264,7 +264,7 @@ As shown in the correlation matrix above, some features show high correlations w
 
 To give a further proof of the linear dipendence of these variables, their interactions plots are shown:  
 <p align = "center">
-<img height="300" src="https://github.com/robertofranceschi/default-credit-card-prediction/blob/master/images/scatter-correlated_features.png?raw=true">
+<img height="300" src="https://github.com/Lalube9/Credit-Risk-Mitigation-Predictive-Analysis/default-credit-card-prediction/blob/master/images/scatter-correlated_features.png?raw=true">
 </p>
 <p align = "center">
 Distribution of correlated features (scatter plot)
@@ -280,7 +280,7 @@ For completness, also charts of non-strongly correlated features are reported. I
 
 The following charts are obtained:  
 <p align = "center">
-<img height="300" src="https://github.com/robertofranceschi/default-credit-card-prediction/blob/master/images/scatter-uncorrelated.png?raw=true">
+<img height="300" src="https://github.com/Lalube9/Credit-Risk-Mitigation-Predictive-Analysis/default-credit-card-prediction/blob/master/images/scatter-uncorrelated.png?raw=true">
 </p>
 <p align = "center">
 Distribution of uncorrelated features
@@ -303,7 +303,7 @@ A boxplot represents a 5-number summary of data:
 In the boxplot we define the Interquartile range (IQR) as is the distance between the upper and lower quartiles: $IQR = Q_3 - Q_1 = q(0.75) - q(0.25) $
 
 <p align = "center">
-<img height="300" src="https://github.com/robertofranceschi/default-credit-card-prediction/blob/master/images/boxplot_theory.png?raw=true">
+<img height="300" src="https://github.com/Lalube9/Credit-Risk-Mitigation-Predictive-Analysis/default-credit-card-prediction/blob/master/images/boxplot_theory.png?raw=true">
 </p>
 <p align = "center">
 Boxplot description
@@ -341,7 +341,7 @@ X_train = scaler.transform(X_train)
 X_test = scaler.transform(X_test)
 ```
 <p align = "center">
-<img height="300" src="https://github.com/robertofranceschi/default-credit-card-prediction/blob/master/images/boxplots.png?raw=true">
+<img height="300" src="https://github.com/Lalube9/Credit-Risk-Mitigation-Predictive-Analysis/default-credit-card-prediction/blob/master/images/boxplots.png?raw=true">
 </p>
 <p align = "center">
 Boxplots of numerical features scaled according min-max normalization (left) and standardization (right)
@@ -429,7 +429,7 @@ Finally note that $\Lambda$ is now the covariance matrix in the new basis found,
 In this study, PCA has been performed on the Credit card dataset to deal with the multicollinearity problem and reduce the number of dimensions. The following figure shows how the variance has been redistributed on the new features extracted.
 
 <p align = "center">
-<img height="300" src="https://github.com/robertofranceschi/default-credit-card-prediction/blob/master/images/pca.png?raw=true">
+<img height="300" src="https://github.com/Lalube9/Credit-Risk-Mitigation-Predictive-Analysis/default-credit-card-prediction/blob/master/images/pca.png?raw=true">
 </p>
 <p align = "center">
 Explained variance ratio of each principle component, together with the  
@@ -484,7 +484,7 @@ For both techniques there is a naïve approach that is the **_random oversamplin
 With SMOTE algorithm the minority class is augmented artificially, by constructing new synthetic samples randomly positioned in between one point and its k-neighbors. In other words, given a limited set of data points that belong to the class that we wish to augment, we trace high-dimensional lines connecting the data points and we draw new samples from such lines.  
 
 <p align = "center">
-<img src="https://github.com/robertofranceschi/default-credit-card-prediction/blob/master/images/oversampling-smote.png?raw=true">
+<img src="https://github.com/Lalube9/Credit-Risk-Mitigation-Predictive-Analysis/default-credit-card-prediction/blob/master/images/oversampling-smote.png?raw=true">
 </p>
 <p align = "center">
 Example of SMOTE application on a small dataset
@@ -510,7 +510,7 @@ accuracy = accuracy_score(y_test, y_pred)
 Cluster Centroids make use of K-means algorithm to perform undersampling. After finding the cluster centroids on the majority class points, the algorithm selects the instances belonging to the cluster (labelled with the majority class), which are furthest from the cluster centroid in feature space. These data points are considered as the most unimportant instance. On the contrary, the instance belonging to the majority class, that is nearest to the cluster centroid in feature space, is considered to be the most important instance. In this way, instances belonging to the majority class are removed on the basis of their importance.  
 
 <p align = "center">
-<img height="300" src="https://github.com/robertofranceschi/default-credit-card-prediction/blob/master/images/undersampling-cluster_centroids.png?raw=true">
+<img height="300" src="https://github.com/Lalube9/Credit-Risk-Mitigation-Predictive-Analysis/default-credit-card-prediction/blob/master/images/undersampling-cluster_centroids.png?raw=true">
 </p>
 <p align = "center">
 Example of Cluster Centroids application on a trivial dataset
@@ -620,7 +620,7 @@ params = {'C': [0.0001, 0.001, 0.01, 0.1, 1, 10]}
 ```
 
 <p align = "center">
-<img height="300" src="https://github.com/robertofranceschi/default-credit-card-prediction/blob/master/images/logisticregression_compare_score.png?raw=true">
+<img height="300" src="https://github.com/Lalube9/Credit-Risk-Mitigation-Predictive-Analysis/default-credit-card-prediction/blob/master/images/logisticregression_compare_score.png?raw=true">
 </p>
 <p align = "center">
 Tuning of hyperparameter C on the training set both with SMOTE (left) and Cluster Centroids (right)  
@@ -629,7 +629,7 @@ algorithms. Note that scores reported refers to the positive class.</p>
 As a result, the output of a Logistic Regression model is the probability of the input sample to be of class 1, hence a confidence measure is also returned when predictions are performed. On top of this, the coefficients returned by the algorithm may give interpretable insights on what attributes are contributing the most to a higher output value, and viceversa.
 
 <p align = "center">
-<img height="300" src="https://github.com/robertofranceschi/default-credit-card-prediction/blob/master/images/logisticregression_coefficents.png?raw=true">
+<img height="300" src="https://github.com/Lalube9/Credit-Risk-Mitigation-Predictive-Analysis/default-credit-card-prediction/blob/master/images/logisticregression_coefficents.png?raw=true">
 </p>
 <p align = "center">
 Coefficients found by Logistic Regression. The PC5 feature empirically  
@@ -661,7 +661,7 @@ Overall, each tree is then trained on a sample of the same size of the training 
 Hyperparameter tuning on the number of trees and pruning factors for each tree has been performed. In particular, note how the predictions tend to be better as the ensemble model grows horizontally in size:
 
 <p align = "center">
-<img height="300" src="https://github.com/robertofranceschi/default-credit-card-prediction/blob/master/images/randomforest_compare_score.png?raw=true">
+<img height="300" src="https://github.com/Lalube9/Credit-Risk-Mitigation-Predictive-Analysis/default-credit-card-prediction/blob/master/images/randomforest_compare_score.png?raw=true">
 </p>
 <p align = "center">
 Tuning of hyperparameter n_estimator is reported both for SMOTE (left) and Cluster Centroids (right) algorithms.</p>
@@ -676,7 +676,7 @@ params = {'criterion': 'gini', 'max_features': 'sqrt', 'n_estimators': 100}
 Finally, tree-based model can be used as an alternative method for feature selection. They indeed provide a feature importance measure by means of how much the gini index has been affected on the various splits with the given feature. Compared to decision tree, random forests guarantee robustness and are less prone to overfitting.  
 
 <p align = "center">
-<img height="300" src="https://github.com/robertofranceschi/default-credit-card-prediction/blob/master/images/randomforest-feature_importance.png?raw=true">
+<img height="300" src="https://github.com/Lalube9/Credit-Risk-Mitigation-Predictive-Analysis/default-credit-card-prediction/blob/master/images/randomforest-feature_importance.png?raw=true">
 </p>
 <p align = "center">
 Feature importance computed by the random forest on each of the attributes</p>
@@ -771,7 +771,7 @@ In conclusion, also in this case the results should be improved in order to get 
 ---
 ## Results
 
-The following barplot displays a summary of results in the training-validation phase where all the algorithms are trained with their best hyperparameters (i.e. the ones that maximize the f1-score on positive class), with both techniques presented to overcome class imbalancing problem. ![](https://github.com/robertofranceschi/default-credit-card-prediction/blob/master/images/final_comparison_f1score.png?raw=true)
+The following barplot displays a summary of results in the training-validation phase where all the algorithms are trained with their best hyperparameters (i.e. the ones that maximize the f1-score on positive class), with both techniques presented to overcome class imbalancing problem. ![](https://github.com/Lalube9/Credit-Risk-Mitigation-Predictive-Analysis/default-credit-card-prediction/blob/master/images/final_comparison_f1score.png?raw=true)
 
 _Comparison of F1-score with different algorithms_
 
