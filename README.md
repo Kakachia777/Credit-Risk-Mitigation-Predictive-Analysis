@@ -1,4 +1,4 @@
-# Machine learning algorithms for predicting default of Credit Card clients 💳
+# Credit Risk Mitigation: Predictive Analysis Using Machine Learning 💳
 
 Classification of default of credit card clients from the UCI dataset using machine learning techniques.
 
