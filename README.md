@@ -223,7 +223,8 @@ The very high value of standard deviation has been further investigated. As can 
 
 
 <p align = "center">
-<img height="300" src="https://github.com/Lalube9/Credit-Risk-Mitigation-Predictive-Analysis/default-credit-card-prediction/blob/master/images/LIMIT_BAL_distribution.png?raw=true">
+<img height="300" src="![DALL·E 2024-01-26 20 03 12 - An intricate and clear digital art illustration of a correlation matrix for dataset features  The matrix is presented in a grid layout, with each cell](https://github.com/Kakachia777/Credit-Risk-Mitigation-Predictive-Analysis/assets/127616222/77b78ba0-a720-4708-a8f2-cab7ade77e90)
+">
 </p>
 <p align = "center">
 Density plot of amount of given credit (LIMIT_BAL)
@@ -248,7 +249,7 @@ In practice, the underlying probability distribution is not known but only a sam
 The following representation shows the correlation matrix between features: since the way the matrix is constructed make it symmetric and because of the large number of features, only the heatmap of the lower diagonal matrix (the diagonal itself is excluded) is reported for a better visualization.  
 
 <p align = "center">
-<img height="500" src="https://github.com/Lalube9/Credit-Risk-Mitigation-Predictive-Analysis/default-credit-card-prediction/blob/master/images/correlation%20matrix.png?raw=true">
+<img height="500" src="">
 </p>
 <p align = "center">
 Correlation matrix by means of the Pearson’s coefficient for all feature pairs.
@@ -278,7 +279,8 @@ For completness, also charts of non-strongly correlated features are reported. I
 
 The following charts are obtained:  
 <p align = "center">
-<img height="300" src="https://github.com/Lalube9/Credit-Risk-Mitigation-Predictive-Analysis/default-credit-card-prediction/blob/master/images/scatter-uncorrelated.png?raw=true">
+<img height="300" src="![DALL·E 2024-01-26 19 57 35 - A digital art illustration depicting a bar chart to represent class distribution in a dataset  The chart features two bars, one significantly larger t](https://github.com/Kakachia777/Credit-Risk-Mitigation-Predictive-Analysis/assets/127616222/9b7e27ad-7145-418c-8fe2-31345a5e9754)
+">
 </p>
 <p align = "center">
 Distribution of uncorrelated features
@@ -301,7 +303,7 @@ A boxplot represents a 5-number summary of data:
 In the boxplot we define the Interquartile range (IQR) as is the distance between the upper and lower quartiles: $IQR = Q_3 - Q_1 = q(0.75) - q(0.25) $
 
 <p align = "center">
-<img height="300" src="https://github.com/Lalube9/Credit-Risk-Mitigation-Predictive-Analysis/default-credit-card-prediction/blob/master/images/boxplot_theory.png?raw=true">
+<img height="300" src="![DALL·E 2024-01-26 19 58 53 - A detailed and colorful digital art illustration of a histogram showing the distribution of credit limits among clients  The histogram features variou](https://github.com/Kakachia777/Credit-Risk-Mitigation-Predictive-Analysis/assets/127616222/a73e8ac4-4316-4c37-b88c-4852e349f621)">
 </p>
 <p align = "center">
 Boxplot description
