@@ -1,7 +1,7 @@
 # Credit Risk Mitigation: Predictive Analysis Using Machine Learning 💳
 
 Classification of default of credit card clients from the UCI dataset using machine learning techniques.
-Check Out: [Presentation](https://gamma.app/docs/Credit-Risk-Mitigation-Predictive-Analysis-Using-Machine-Learning-c3t73s07qxscvsq?mode=present#card-8825oe2pnz5zwdb).  
+Check Out: [Presentation](https://gamma.app/docs/Credit-Risk-Mitigation-Predictive-Analysis-Using-Machine-Learning-c3t73s07qxscvsq?mode=present#card-8825oe2pnz5zwdb)
 
 ---
 ## Contents:
